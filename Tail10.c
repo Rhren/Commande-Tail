@@ -8,8 +8,8 @@ int main(int argc,char *argv[]){
 	FILE *fichier=NULL;
 	int nbr;
 	
-	chaine=allocation();
 	nbr=compteur(argv[1]);
+	chaine=allocation(nbr);
 	commande(fichier,chaine,argv[1],nbr);
 	free(chaine);
 	

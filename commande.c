@@ -45,10 +45,10 @@ void commande(FILE *fichier,char *chaine,char *file,int nbr)
 	}
 		fclose(fichier);
 	}
-char *allocation()
+char *allocation(int nbr)
 {
 	char *tab=NULL;
-	tab=(char*)malloc(20000*sizeof(char));
+	tab=(char*)malloc(nbr*sizeof(char));
 	return (tab);
 }
 int compteur (char *file){
